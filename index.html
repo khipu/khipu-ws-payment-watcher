@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="application/javascript" src="khipu-ws-payment-watcher.js"></script>
+</head>
+<body>
+    <input type="text" id="paymentId">
+    <button onclick="init()">Init watcher</button>
+
+<script>
+    function init() {
+        KhipuPaymentEvents.initPaymentWatch($('#paymentId').val())
+    }
+</script>
+</body>
+
+</html>
